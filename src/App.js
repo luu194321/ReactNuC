@@ -17,7 +17,7 @@ function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="directory" element={<CampsitesDirectoryPage />} />
         <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} />
-        <Route path="about" element={<AboutPage />}></Route>
+        <Route path="about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>
