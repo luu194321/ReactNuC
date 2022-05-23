@@ -1,6 +1,6 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-// import { validateContactForm } from "../utils/validateContactForm";
+import { validateContactForm } from "../utils/validateContactForm";
 
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -21,7 +21,7 @@ const ContactForm = () => {
         feedback: "",
       }}
       onSubmit={handleSubmit}
-      //   validate={validateContactForm}
+      validate={validateContactForm}
     >
       <Form>
         <FormGroup row>
